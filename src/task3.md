@@ -1,7 +1,7 @@
 ## 3. feladat: írjatok egy függvényt, ami:
-- két listát fogad paraméternek, melyek egy-egy múltbéli időpontot tartalmaznak
-- mindkét lista három elemű az első az órát, a 2. a percet a 3. pedig a másodpercet jelöli
-- a függvény visszatérési értéke pedig két szám ami a kurzus kezdeének időpontja és a bemeneti paraméterként megadott két dátum között eltelt napok száma
+- három listát fogad paraméternek, melyek közül az első kettő egy-egy múltbéli időpontot tartalmaz, a harmadik pedig a kurzus kezdetének időpontja
+- mindhárom lista három elemű az első az órát, a 2. a percet a 3. pedig a másodpercet jelöli
+- a függvény visszatérési értéke pedig két szám ami a kurzus kezdének időpontja és a bemeneti paraméterként megadott két korábbi időpont között eltelt másodpercek száma
 
 ### Segítség:
 - Figyeljetek rá, hogy Pythonban **nullától kezdődik az indexelés**!
