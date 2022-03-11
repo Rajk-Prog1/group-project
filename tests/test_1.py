@@ -1,6 +1,6 @@
 import pytest
 import string
-from src import function1
+from src.function1 import *
 
 def remove_chars(inp):
 
@@ -9,7 +9,7 @@ def remove_chars(inp):
 
 input_string = open('input_string.txt').read()[:-1]
 
-class TestArithmeticOperators(object):
+class TestFunctionOne(object):
 
     def test_1(self):
         assert remove_chars(input_string) == function1(input_string)
