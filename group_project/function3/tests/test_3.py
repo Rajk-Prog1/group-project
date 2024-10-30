@@ -1,6 +1,5 @@
-import pytest
 import datetime
-from src.function3 import *
+from group_project.function3.function3 import *
 
 input_list_1 = [6, 8, 6]
 input_list_2 = [12, 45, 40]
@@ -43,7 +42,7 @@ def cal_diff(input_list_1: list, input_list_2: list, start_of_the_course: list):
 
 
 class TestFunctionThree(object):
-    def test_1(self):
+    def test_3(self):
         assert cal_diff(input_list_1, input_list_2, start_of_the_course) == function3(
             input_list_1, input_list_2, start_of_the_course
         )

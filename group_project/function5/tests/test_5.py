@@ -1,5 +1,4 @@
-import pytest
-from src.function5 import *
+from group_project.function5.function5 import *
 
 input_string = "asdlkajnfpibwf891763t4ohbdiweuzrg91823gzbdockjwdehbf9kllhjbaefizgiweuzdbiwuezgrweuzgfh98437wzgrh"
 input_int = 3
@@ -16,7 +15,7 @@ def select_chars(input_string, input_int):
 
 
 class TestFunctionFive(object):
-    def test_1(self):
+    def test_5(self):
         assert select_chars(input_string, input_int) == function5(
             input_string, input_int
         )

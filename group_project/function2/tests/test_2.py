@@ -1,9 +1,9 @@
-import pytest
-from src.function2 import *
+from group_project.function2.function2 import *
 
 switchdict = {",": "+", "#": "-"}
 reverse_switchdict = {v: k for k, v in switchdict.items()}
-input_string = open('input_string.txt').read()[:-1]
+input_string = open("input_string.txt").read()[:-1]
+
 
 def replace_chars(inp):
 
@@ -12,7 +12,8 @@ def replace_chars(inp):
 
     return inp
 
+
 class TestFunctionTwo(object):
 
-    def test_1(self):
+    def test_2(self):
         assert replace_chars(input_string) == function2(input_string)

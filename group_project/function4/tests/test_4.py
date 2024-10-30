@@ -1,5 +1,4 @@
-import pytest
-from src.function4 import *
+from group_project.function4.function4 import *
 
 
 inp1 = 345
@@ -18,5 +17,5 @@ def bcommon_div(inp1, inp2):
 
 
 class TestFunctionFour(object):
-    def test_1(self):
+    def test_4(self):
         assert bcommon_div(inp1, inp2) == function4(inp1, inp2)
