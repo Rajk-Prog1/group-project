@@ -1,4 +1,4 @@
-from group_project.function4.function4 import *
+from function4 import *
 
 
 inp1 = 345

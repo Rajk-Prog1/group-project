@@ -1,0 +1,10 @@
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["group_project"]
+pythonpath = [
+    "group_project/function1",
+    "group_project/function2",
+    "group_project/function3",
+    "group_project/function4",
+    "group_project/function5",
+]

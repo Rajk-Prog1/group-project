@@ -1,8 +1,11 @@
-from group_project.function2.function2 import *
+from pathlib import Path
+
+from function2 import *
 
 switchdict = {",": "+", "#": "-"}
 reverse_switchdict = {v: k for k, v in switchdict.items()}
-input_string = open("input_string.txt").read()[:-1]
+# Task 2 reuses the input file that lives in the function1 folder.
+input_string = (Path(__file__).parents[2] / "function1" / "input_string.txt").read_text(encoding="utf-8")[:-1]
 
 
 def replace_chars(inp):

@@ -1,47 +1,30 @@
 import datetime
-from group_project.function3.function3 import *
 
-input_list_1 = [6, 8, 6]
-input_list_2 = [12, 45, 40]
-start_of_the_course = [18, 0, 0]
+from function3 import *
+
+input_list_1 = [3, 38, 6]
+input_list_2 = [10, 15, 40]
+start_of_the_course = [15, 30, 0]
 
 
 def cal_diff(input_list_1: list, input_list_2: list, start_of_the_course: list):
 
-    inputdate_1 = datetime.datetime(
-        datetime.datetime.now().year,
-        datetime.datetime.now().month,
-        datetime.datetime.now().day,
-        input_list_1[0],
-        input_list_1[1],
-        input_list_1[2],
-    )
+    # Any fixed day works; only the time of day matters.
+    day = datetime.date(2000, 1, 1)
 
-    inputdate_2 = datetime.datetime(
-        datetime.datetime.now().year,
-        datetime.datetime.now().month,
-        datetime.datetime.now().day,
-        input_list_2[0],
-        input_list_2[1],
-        input_list_2[2],
-    )
-
-    startofcoursedate = datetime.datetime(
-        datetime.datetime.now().year,
-        datetime.datetime.now().month,
-        datetime.datetime.now().day,
-        start_of_the_course[0],
-        start_of_the_course[1],
-        start_of_the_course[2],
+    inputdate_1 = datetime.datetime.combine(day, datetime.time(*input_list_1))
+    inputdate_2 = datetime.datetime.combine(day, datetime.time(*input_list_2))
+    startofcoursedate = datetime.datetime.combine(
+        day, datetime.time(*start_of_the_course)
     )
 
     return (
-        (startofcoursedate - inputdate_1).seconds,
-        (startofcoursedate - inputdate_2).seconds,
+        int((startofcoursedate - inputdate_1).total_seconds()),
+        int((startofcoursedate - inputdate_2).total_seconds()),
     )
 
 
-class TestFunctionThree(object):
+class TestFunctionThree:
     def test_3(self):
         assert cal_diff(input_list_1, input_list_2, start_of_the_course) == function3(
             input_list_1, input_list_2, start_of_the_course

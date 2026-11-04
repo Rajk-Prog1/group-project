@@ -1,4 +1,4 @@
-from group_project.function5.function5 import *
+from function5 import *
 
 input_string = "asdlkajnfpibwf891763t4ohbdiweuzrg91823gzbdockjwdehbf9kllhjbaefizgiweuzdbiwuezgrweuzgfh98437wzgrh"
 input_int = 3
